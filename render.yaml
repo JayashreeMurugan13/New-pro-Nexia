@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: nexia-backend
+    runtime: docker
+    dockerfilePath: nexia-backend/Dockerfile
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+
+databases:
+  - name: nexia-db
+    databaseName: nexia_db
+    user: nexia_user
