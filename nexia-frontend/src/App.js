@@ -14,7 +14,6 @@ import MockInterviewPage from './pages/dashboard/MockInterviewPage';
 import InterviewCoachPage from './pages/dashboard/InterviewCoachPage';
 import JobsPage from './pages/dashboard/JobsPage';
 import GoalsPage from './pages/dashboard/GoalsPage';
-import FunPage from './pages/dashboard/FunPage';
 
 function ProtectedRoute({ children }) {
   const { isAuthenticated } = useAuth();
@@ -40,7 +39,6 @@ function AppRoutes() {
         <Route path="mock-interview" element={<MockInterviewPage />} />
         <Route path="jobs" element={<JobsPage />} />
         <Route path="goals" element={<GoalsPage />} />
-        <Route path="fun" element={<FunPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>

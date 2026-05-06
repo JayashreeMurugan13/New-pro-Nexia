@@ -24,6 +24,7 @@ export default function JobsPage() {
       .finally(() => setLoading(false));
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { fetchJobs(); }, []);
 
   const handleKeyDown = (e) => { if (e.key === 'Enter') fetchJobs(); };

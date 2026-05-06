@@ -4,7 +4,7 @@ import ThemeToggle from './ui/ThemeToggle';
 import { motion } from 'framer-motion';
 import {
   LayoutDashboard, MessageSquare, FileText, Video,
-  Mic, Briefcase, Target, Sparkles, LogOut, Brain
+  Mic, Briefcase, Target, LogOut, Brain
 } from 'lucide-react';
 
 const links = [
@@ -15,7 +15,6 @@ const links = [
   { to: '/dashboard/mock-interview', icon: Mic, label: 'Mock Interview' },
   { to: '/dashboard/jobs', icon: Briefcase, label: 'Job Recommendations' },
   { to: '/dashboard/goals', icon: Target, label: 'Goals & Progress' },
-  { to: '/dashboard/fun', icon: Sparkles, label: 'Fun Features' },
 ];
 
 export default function Sidebar() {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Image, Star } from 'lucide-react';
+import { Image, Star } from 'lucide-react';
 
 const FORTUNES = [
   "🌟 Your next career move will open doors you never imagined. A leadership role awaits!",
