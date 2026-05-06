@@ -1,0 +1,29 @@
+# Environment variables (never commit)
+.env
+
+# Maven
+nexia-backend/target/
+nexia-backend/*.log
+
+# Node
+nexia-frontend/node_modules/
+nexia-frontend/build/
+nexia-frontend/frontend.log
+
+# Logs
+*.log
+backend.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+*.txt.bak
+test_resume.txt

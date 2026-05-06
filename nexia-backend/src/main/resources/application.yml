@@ -1,0 +1,36 @@
+spring:
+  main:
+    allow-circular-references: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nexia_db
+    username: postgres
+    password: nexia123
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+server:
+  port: 8080
+
+app:
+  jwt:
+    secret: nexia_super_secret_key_2024_production_ready_256bit_key
+    expiration: 86400000
+  groq:
+    api-key: ${GROQ_API_KEY:your_groq_api_key_here}
+    base-url: https://api.groq.com/openai/v1
+    model: llama-3.1-8b-instant
+
+logging:
+  level:
+    com.nexia: INFO
+    org.springframework.security: WARN
